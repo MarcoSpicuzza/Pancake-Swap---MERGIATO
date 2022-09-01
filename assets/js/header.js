@@ -1,8 +1,17 @@
 const storages = document.querySelector(".storage");
 
+window.addEventListener("load", (event) => {
+  if (localStorage.getItem("banner") === "hidden") {
+    storages.classList.add("hidden");
+  } else {
+    storages.classList.remove("hidden");
+  }
+});
+
 const remover = document
   .querySelector(".close-storage")
   .addEventListener("click", (e) => {
+    localStorage.setItem("banner", "hidden");
     storages.classList.add("hidden");
   });
 
@@ -47,7 +56,7 @@ animation(eye2);
 let portafoglio = document.querySelector(".connect-wallet-btn");
 
 function media851(x) {
-  if (x.matches) {
+  if (x) {
     portafoglio.innerHTML = "Connect";
   } else {
     portafoglio.innerHTML = "Connect Wallet";
