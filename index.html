@@ -1372,7 +1372,7 @@
 
   //close connect-wallet
   window.onclick = (e) => {
-    if(document.querySelector(".wallet").contains(e.target) || document.querySelector(".connect-wallet-btn").contains(e.target)){
+    if(document.querySelector(".wallet").contains(e.target) || document.querySelectorAll(".connect-wallet-btn").contains(e.target)){
 
     } else {
       closeWallet();
