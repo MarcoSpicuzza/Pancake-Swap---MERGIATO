@@ -6,13 +6,13 @@
     -moz-background-clip: text
     -moz-text-fill-color: transparent
     font-weight: $weight600
-    
+
 .wrapper
     width: 100%
     @include flex
     .container
         max-width: 90%
-        
+
 .main-wrapper1
     padding: calc($rem*7) 0 0
     background: $bg-color1
@@ -57,7 +57,7 @@
                 background-repeat: no-repeat
                 padding: 0px 0px 3px 10px
                 p
-                    @include crayola    
+                    @include crayola
                 p:nth-of-type(even)
                     margin-right: 10px
                 .extra
@@ -68,7 +68,7 @@
             gap: 0.5rem
             @extend .slide_lottery
             padding: 1.5rem 1.5rem 1.4rem
-            h2 
+            h2
                 @include crayola
                 font-size: $lg
                 text-shadow: none
@@ -190,11 +190,10 @@
                 fill: $primary-color
                 color: $primary-color
         .boxes:nth-of-type(2)
-            svg, h2:last-of-type 
+            svg, h2:last-of-type
                 fill: $secondary-color
                 color: $secondary-color
         .boxes:nth-of-type(3)
-            svg, h2:last-of-type 
+            svg, h2:last-of-type
                 fill: $tertiary-color
                 color: $tertiary-color
-            
