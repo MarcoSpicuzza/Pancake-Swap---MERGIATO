@@ -23,7 +23,7 @@ nav
     padding-left: 8px
     background: rgb(39, 38, 44)
     border-top: 1px solid rgb(56, 50, 65)
-    z-index: 20
+    z-index: 50
     gap: 0
     
 
@@ -112,6 +112,7 @@ body, a, button
 
 .coniglio-storage
     width: calc($rem*5.75)
+    z-index: 7
 
 .span1
     color: #ffb237
@@ -216,6 +217,7 @@ body, a, button
 
 .bottone // connect Wallet 
     @extend .btn
+    height: calc($rem * 2)
     @include icon-hover
     font-family: $font
 
@@ -400,6 +402,7 @@ body, a, button
     background-color:$secondary-btn-color
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s
     @extend .btn
+    height: calc($rem*2)
     color : $secondary-color
     margin: 4px 4px 0 0
     &:focus
@@ -491,6 +494,12 @@ body, a, button
     width: 100vw
     height: 100vh
     position: absolute
+
+.nav-container
+    position: fixed
+    width: 100%
+    z-index: 53
+
    
 
 @media screen and (min-width: 576px)

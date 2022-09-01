@@ -54,6 +54,16 @@ function media851(x) {
   }
 }
 
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".nav-container").style.top = "0";
+  } else {
+    document.querySelector(".nav-container").style.top = "-126px";
+  }
+  prevScrollpos = currentScrollPos;
+};
 const width851 = window
   .matchMedia("(max-width: 851px)")
   .addEventListener("change", media851);

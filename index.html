@@ -11,7 +11,9 @@
     <script src="assets/js/cta.js" defer></script>
     <title>Home - Pancake Swap</title>
   </head>
-  <body><!-- banner anti-phishing -->
+  <body>
+    <!-- banner anti-phishing -->
+    <div class="nav-container">
     <div class="storage">
       <div class="warning">
         <picture>
@@ -281,6 +283,7 @@
        </div>
       </div>
     </nav>
+  </div>
     <div class="mobile-navbar">
       <div class="mobile-btn">
         <a href="">
@@ -1355,14 +1358,14 @@
     btn.onclick = () => {
       if (window.innerWidth < 851) {
         connectWallet.style.display = "flex";
-        connectWallet.style.zIndex = "10";
+        connectWallet.style.zIndex = "51";
         document.querySelector(".wallet").style.animation =
           "bla 0.3s forwards ease-in-out";
         connectWallet.style.animation =
           "connect-wallet 0.35s ease forwards";
       } else {
         connectWallet.style.display = "flex";
-        connectWallet.style.zIndex = "10";
+        connectWallet.style.zIndex = "51";
         connectWallet.style.animation =
           "connect-wallet 0.35s ease forwards";
         document.querySelector(".wallet").style.animation = "none";
@@ -1372,8 +1375,9 @@
 
   //close connect-wallet
   window.onclick = (e) => {
-    if(document.querySelector(".wallet").contains(e.target) || document.querySelectorAll(".connect-wallet-btn").contains(e.target)){
-
+    const del = document.querySelectorAll(".connect-wallet-btn").forEach((el) => console.log(el));
+    if(document.querySelector(".wallet").contains(e.target) || del.contains(e.target)){
+    console.log('inside')
     } else {
       closeWallet();
       console.log('click outside');
