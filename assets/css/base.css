@@ -682,7 +682,6 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   .logo-desktop {
     display: none;
   }
-
   .logo-966 {
     display: block;
   }
@@ -691,16 +690,13 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   .coniglio-storage {
     display: none;
   }
-
   .phishing {
     background: transparent;
     width: 100%;
   }
-
   .storage {
     background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, #492286 100%);
   }
-
   .money {
     display: none;
   }
@@ -1062,7 +1058,6 @@ body {
     flex-direction: column-reverse;
     align-items: flex-end;
   }
-
   .top-container_text {
     align-self: center;
     margin-right: 64px;
@@ -1082,7 +1077,6 @@ body {
   }
 }
 .cta-main_container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1574,7 +1568,6 @@ body {
     gap: 16px;
     grid-template-columns: repeat(5, auto);
   }
-
   .stats-table_secondary {
     gap: 16px;
     grid-template-columns: repeat(5, auto);
@@ -1584,7 +1577,6 @@ body {
   .bot-container_text {
     margin-left: 1rem;
   }
-
   .h2-content_text {
     font-size: 1.25rem;
     font-weight: 600;
@@ -1599,30 +1591,24 @@ body {
     -webkit-box-align: center;
     align-items: center;
   }
-
   .bot-container_img {
     flex: 1 1 0%;
     margin-bottom: 0px;
     height: 100%;
     width: 100%;
   }
-
   .h2-bot_container {
     font-size: 2.5rem;
   }
-
   .h2-stats {
     font-size: 1.25rem;
   }
-
   .grid-stats_container {
     height: 80px;
   }
-
   .stats-table {
     gap: 32px;
   }
-
   .stats-table_secondary {
     gap: 32px;
   }
@@ -1732,20 +1718,16 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
-
   .stats-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
-
   .secondary-stats {
     margin-top: 2rem;
   }
-
   .hidden-table_secondary {
     margin-top: 0rem;
   }
-
   .hidden-table {
     margin-top: 2rem;
   }
@@ -1963,7 +1945,7 @@ body {
 .section-prizes .center-prizes .prizes-cards-container .cardsContainer:last-of-type .biggerC .bCard {
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
 }
-.section-prizes .center-prizes .prizes-cards-container .cardsContainer:last-of-type .biggerC .bCard .bLogo .containerIcons .icons.lottery {
+.section-prizes .center-prizes .prizes-cards-container .cardsContainer:last-of-type .biggerC .bCard .bLogo .containerIcons .icons-lottery {
   fill: #fff;
 }
 .section-prizes .center-prizes .prizes-cards-container .cardsContainer:last-of-type .biggerC .bCard .bText .lTitle,
@@ -2879,11 +2861,9 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   .img-left-footer {
     display: none;
   }
-
   .img-right-footer {
     display: none;
   }
-
   .connect-wallet {
     align-items: end;
   }
@@ -2902,11 +2882,9 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
     order: 1;
     margin-bottom: 24px;
   }
-
   .logo-footer {
     display: none;
   }
-
   .container-footer {
     display: flex;
     flex-direction: column;
@@ -2940,12 +2918,10 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   .container-footer .icons {
     order: 3;
   }
-
   .footer-wrapper {
     padding: 40px 16px;
     margin-bottom: 44px;
   }
-
   .up-footer-center {
     padding-block: 16px;
     padding-inline: 24px;
