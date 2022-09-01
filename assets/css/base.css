@@ -1506,7 +1506,7 @@ body {
   height: 100%;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -1rem;
   margin-right: 0.5rem;
 }
 .bot-img_pie .img, .bot-img_stonks .img, .bot-img_folder .img {
