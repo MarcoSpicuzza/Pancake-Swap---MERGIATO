@@ -10,6 +10,7 @@ nav
     color: $p-color
     position: fixed
     border-bottom: 1px solid $border-nav-components
+    z-index: 8
 
 .mobile-navbar
     @include flex
@@ -299,11 +300,12 @@ body, a, button
 
 .popup-bg
     @include flex
-    position: absolute
+    position: fixed
     top: 0
     height: 100vh
     width: 100vw 
     background-color: rgba(244, 238, 255, 0.6)
+    z-index: 10
    
 
 .hidden
@@ -491,11 +493,16 @@ body, a, button
     position: absolute
    
 
+@media screen and (min-width: 576px)
+    .mobile-navbar
+        display: none
+
 @media screen and (max-width: 966px)
     .logo-desktop
         display: none
     .logo-966
-        display: block    
+        display: block
+    
 
 @media screen and (max-width: 851px)
     .coniglio-storage
@@ -511,3 +518,5 @@ body, a, button
 @media screen and (max-width: 575px)
     .link-container
         display: none
+    .mobile-navbar
+        display: flex

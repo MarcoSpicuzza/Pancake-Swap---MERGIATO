@@ -42,7 +42,7 @@ function animation(value) {
   });
 }
 animation(eye);
-animation(eye2)
+animation(eye2);
 
 let portafoglio = document.querySelector(".connect-wallet-btn");
 
