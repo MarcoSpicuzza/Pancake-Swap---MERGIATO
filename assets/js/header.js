@@ -63,6 +63,12 @@ function media851(x) {
   }
 }
 
+const width851 = window
+  .matchMedia("(max-width: 851px)")
+  .addEventListener("change", media851);
+
+media851(width851);
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
@@ -73,8 +79,19 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
-const width851 = window
-  .matchMedia("(max-width: 851px)")
-  .addEventListener("change", media851);
 
-media851(width851);
+
+const patinamobile = document.querySelector('.overlay-mobile');
+const tradecontent = document.querySelector('.content-trade');
+const btnmobile = document.querySelectorAll('.mobile-btn');
+
+patinamobile.addEventListener("click", () => {
+    patinamobile.style.display = "none";
+    
+})
+
+for (let i = 0; i < btnmobile.length; i++) {
+  btnmobile[i].addEventListener("click", (e) => {
+    patinamobile.style.display = "block";
+  });
+}
