@@ -55,19 +55,26 @@ animation(eye2);
 
 let portafoglio = document.querySelector(".connect-wallet-btn");
 
-function media851(x) {
-  if (x) {
+// function media851(x) {
+//   if (x) {
+//     portafoglio.innerHTML = "Connect";
+//   } else {
+//     portafoglio.innerHTML = "Connect Wallet";
+//   }
+// }
+function load851() {
+  if (window.innerWidth < 851) {
     portafoglio.innerHTML = "Connect";
   } else {
     portafoglio.innerHTML = "Connect Wallet";
   }
 }
+// const width851 = window
+//   .matchMedia("(max-width: 851px)")
+//   .addEventListener("change", media851);
 
-const width851 = window
-  .matchMedia("(max-width: 851px)")
-  .addEventListener("change", media851);
-
-media851(width851);
+load851();
+// media851(width851);
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -80,15 +87,13 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-
-const patinamobile = document.querySelector('.overlay-mobile');
-const tradecontent = document.querySelector('.content-trade');
-const btnmobile = document.querySelectorAll('.mobile-btn');
+const patinamobile = document.querySelector(".overlay-mobile");
+const tradecontent = document.querySelector(".content-trade");
+const btnmobile = document.querySelectorAll(".mobile-btn");
 
 patinamobile.addEventListener("click", () => {
-    patinamobile.style.display = "none";
-    
-})
+  patinamobile.style.display = "none";
+});
 
 for (let i = 0; i < btnmobile.length; i++) {
   btnmobile[i].addEventListener("click", (e) => {
