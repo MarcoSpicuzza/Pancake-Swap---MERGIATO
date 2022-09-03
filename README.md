@@ -2,19 +2,20 @@
 
 Sviluppo del sito Pancake Swap https://pancakeswap.finance/ .
 
-Team :
+## Team :
 
- | Flavia Soreca     |
+ - [Flavia Soreca](https://github.com/FlaviaSo)
  
- | Antonio Ruggiero  |
+ - [Riccardo Mannino](https://github.com/Tonyrgg)
  
- | Marco Spicuzza    |
+ - [Marco Spicuzza](https://github.com/MarcoSpicuzza)
  
- | Michele La Torre  |
+ - [Michele La Torre](https://github.com/samplesamplemic)
  
- | Riccardo Mannino  |
+ - [Riccardo Mannino](https://github.com/RiccardoMannino)
  
- | Riccardo Ruggiero |
+ - [Riccardo Ruggiero](https://github.com/Riccardo1091)
+
  
  Risorse : https://www.figma.com/file/L1BWWkyEZLSRSWxiK0V2bz/Atomic-Design-PancakeSwap?node-id=0%3A1
  
