@@ -6,7 +6,7 @@ Sviluppo del sito Pancake Swap https://pancakeswap.finance/ .
 
  - [Flavia Soreca](https://github.com/FlaviaSo)
  
- - [Riccardo Mannino](https://github.com/Tonyrgg)
+ - [Antonio Ruggiero](https://github.com/Tonyrgg)
  
  - [Marco Spicuzza](https://github.com/MarcoSpicuzza)
  
