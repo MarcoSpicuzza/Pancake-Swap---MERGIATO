@@ -122,6 +122,7 @@ async function getData() {
         const option = document.createElement("option");
         option.innerHTML = el.name;
         option.setAttribute("value", el.name);
+        option.setAttribute('class', 'light-t')
         select.append(option);
       }
     });

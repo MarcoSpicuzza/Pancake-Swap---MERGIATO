@@ -9,13 +9,13 @@ function template(data) {
     let table_row = document.createElement('div');
     table_row.className = 'table-row'
     table_row.innerHTML = `
-            <div class="table-cell text-center ...">
-            <span class="hidden media-num">${el.market_cap_rank}</span>
+            <div class="table-cell text-center light-t ...">
+            <span class="hidden media-num light-t">${el.market_cap_rank}</span>
             <img class="inline-flex w-7 object-fill " src="${el.image}" alt="">  
             ${el.name} (${el.symbol.toUpperCase()})</div>
             <div class="table-cell text-center price_change col-media-del ...">${el.price_change_percentage_24h.toFixed(2)}%</div>
-            <div class="table-cell text-center ...">$${el.current_price.toFixed(2)}</div>
-            <div class="table-cell text-center col-media-del ...">${el.market_cap_rank}</div>
+            <div class="table-cell text-center light-t ...">$${el.current_price.toFixed(2)}</div>
+            <div class="table-cell text-center col-media-del light-t ...">${el.market_cap_rank}</div>
     `;
 
     table.append(table_row);

@@ -20,8 +20,8 @@ getData().then(data => {
             card.innerHTML = `
         <img src="${el.image}" alt="" class="w-8 h-8"/>
        <div class="flex flex-col">
-       <span class="">${el.symbol.toUpperCase()}</span>
-        <span class="flex gap-2 flex-nowrap">$${el.current_price.toFixed(1)} <span class="price_change">${el.price_change_percentage_24h.toFixed(2)}%</span> </span>
+       <span class="light-t">${el.symbol.toUpperCase()}</span>
+        <span class="flex gap-2 flex-nowrap light-t">$${el.current_price.toFixed(1)} <span class="price_change">${el.price_change_percentage_24h.toFixed(2)}%</span> </span>
        </div> 
         `
             carousel.append(card);
