@@ -1,8 +1,17 @@
 const storages = document.querySelector(".storage");
 
+window.addEventListener("load", (event) => {
+  if (localStorage.getItem("banner") === "hidden") {
+    storages.classList.add("hidden");
+  } else {
+    storages.classList.remove("hidden");
+  }
+});
+
 const remover = document
   .querySelector(".close-storage")
   .addEventListener("click", (e) => {
+    localStorage.setItem("banner", "hidden");
     storages.classList.add("hidden");
   });
 
@@ -46,16 +55,48 @@ animation(eye2);
 
 let portafoglio = document.querySelector(".connect-wallet-btn");
 
-function media851(x) {
-  if (x.matches) {
+// function media851(x) {
+//   if (x) {
+//     portafoglio.innerHTML = "Connect";
+//   } else {
+//     portafoglio.innerHTML = "Connect Wallet";
+//   }
+// }
+function load851() {
+  if (window.innerWidth < 851) {
     portafoglio.innerHTML = "Connect";
   } else {
     portafoglio.innerHTML = "Connect Wallet";
   }
 }
+// const width851 = window
+//   .matchMedia("(max-width: 851px)")
+//   .addEventListener("change", media851);
 
-const width851 = window
-  .matchMedia("(max-width: 851px)")
-  .addEventListener("change", media851);
+load851();
+// media851(width851);
 
-media851(width851);
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".nav-container").style.top = "0";
+  } else {
+    document.querySelector(".nav-container").style.top = "-126px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+const patinamobile = document.querySelector(".overlay-mobile");
+const tradecontent = document.querySelector(".content-trade");
+const btnmobile = document.querySelectorAll(".mobile-btn");
+
+patinamobile.addEventListener("click", () => {
+  patinamobile.style.display = "none";
+});
+
+for (let i = 0; i < btnmobile.length; i++) {
+  btnmobile[i].addEventListener("click", (e) => {
+    patinamobile.style.display = "block";
+  });
+}

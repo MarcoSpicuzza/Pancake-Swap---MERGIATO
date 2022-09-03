@@ -23,7 +23,7 @@ nav
     padding-left: 8px
     background: rgb(39, 38, 44)
     border-top: 1px solid rgb(56, 50, 65)
-    z-index: 20
+    z-index: 53
     gap: 0
     
 
@@ -32,6 +32,32 @@ nav
     background: transparent
     cursor: pointer 
     padding: 0px 12px
+    &:hover
+        background: #353547
+        border-radius: 1rem
+        
+    &:hover .content-trade
+        display: block
+        transform: translate(-22px, -236px)
+        width: 90%
+        z-index: 55
+        a
+            font-size: 16px
+            align-items: flex-start
+    &:nth-child(2)
+        .content-trade
+            transform: translate(-26.5%, -148px)
+    &:nth-child(3)
+        .content-trade
+            transform: translate(-49%, -192px)
+    &:nth-child(4)
+        .content-trade
+            transform: translate(-70%, -192px)
+    &:nth-child(5)
+        .content-trade
+            transform: translate(-90%, -342px)
+    
+        
     a
         height: 44px
         @include flex
@@ -42,7 +68,7 @@ nav
         color: $p-color
         font-size: 10px
         box-sizing: border-box
-
+    
 
 @mixin scroll-bar
     ::-webkit-scrollbar
@@ -112,6 +138,7 @@ body, a, button
 
 .coniglio-storage
     width: calc($rem*5.75)
+    z-index: 7
 
 .span1
     color: #ffb237
@@ -216,6 +243,7 @@ body, a, button
 
 .bottone // connect Wallet 
     @extend .btn
+    height: calc($rem * 2)
     @include icon-hover
     font-family: $font
 
@@ -258,6 +286,7 @@ body, a, button
     width: calc( $rem * 17.5 )
     padding: 4px 0  
     transform: translate(-15px, 2px)
+    z-index: 55
 
 .riga-divisoria
     margin: 4px 0
@@ -305,7 +334,7 @@ body, a, button
     height: 100vh
     width: 100vw 
     background-color: rgba(244, 238, 255, 0.6)
-    z-index: 10
+    z-index: 53
    
 
 .hidden
@@ -400,6 +429,7 @@ body, a, button
     background-color:$secondary-btn-color
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s
     @extend .btn
+    height: calc($rem*2)
     color : $secondary-color
     margin: 4px 4px 0 0
     &:focus
@@ -415,15 +445,15 @@ body, a, button
     span
         justify-content: space-around
     input:checked + span::before
-        background: url('../../moon-dark-theme.svg')
+        background: url('../../assets-footer/moon-dark-theme.svg')
         background-repeat: no-repeat 
         background-color: rgb(39, 38, 44)
         height: 24px
         width: 24px
         background-position: right 1px bottom 3px
     span::before
-        background: url('../../sun-light-theme.svg')
-        background-position: left 50% bottom 50% //avvisare michele
+        background: url('../../assets-footer/sun-light-theme.svg')
+        background-position: left 50% bottom 50% 
         background-repeat: no-repeat 
         background-color: rgb(255, 255, 255)
         height: 24px
@@ -491,7 +521,23 @@ body, a, button
     width: 100vw
     height: 100vh
     position: absolute
-   
+
+.nav-container
+    position: fixed
+    width: 100%
+    z-index: 50
+    animation-name: animation-scroll-nav
+    transition: top 0.2s ease 0s 
+
+.overlay-mobile
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: -50px
+    left: 0
+    background-color: rgba(244, 238, 255, 0.6)
+    z-index: 53
+    display: none
 
 @media screen and (min-width: 576px)
     .mobile-navbar
@@ -520,3 +566,17 @@ body, a, button
         display: none
     .mobile-navbar
         display: flex
+    .mobile-btn 
+        &:hover .overlay-mobile
+            display: block
+    .popup-component
+        width: 100%
+        bottom: 0
+        position: fixed
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        border: 1px solid rgb(56, 50, 65)
+    .settings-title
+        border-bottom: 1px solid rgb(56, 50, 65)
+        background: none
+            
