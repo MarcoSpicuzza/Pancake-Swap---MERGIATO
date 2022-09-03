@@ -1369,11 +1369,12 @@
       }
     };
   });
-
+  
   //close connect-wallet
   window.onclick = (e) => {
-    if(document.querySelector(".wallet").contains(e.target) || document.querySelectorAll(".connect-wallet-btn").contains(e.target)){
-
+    const del = document.querySelectorAll(".connect-wallet-btn");
+    if(document.querySelector(".wallet").contains(e.target) || Array.from(del).some((el) => el.contains(e.target))){
+    console.log('inside')
     } else {
       closeWallet();
       console.log('click outside');
