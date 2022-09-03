@@ -999,7 +999,7 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
 }
 @media screen and (max-width: 639px) {
   .main-wrapper1 {
-    padding: 10.875rem 0 0;
+    padding: 7rem 0 0;
   }
 }
 .main-wrapper1 .container:first-of-type {
@@ -1046,6 +1046,11 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   color: white;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.65);
   line-height: 1.1;
+}
+@media screen and (max-width: 639px) {
+  .main-wrapper1 .swiper .slide_lottery h2, .main-wrapper1 .swiper .slide_perpetual h2 {
+    font-size: 1.2rem;
+  }
 }
 .main-wrapper1 .swiper .slide_lottery .countdown, .main-wrapper1 .swiper .slide_perpetual .countdown {
   height: 55px;
@@ -1099,7 +1104,7 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   }
 }
 .main-wrapper1 .swiper .slide_perpetual img {
-  width: 390px;
+  width: 385px;
 }
 @media screen and (max-width: 639px) {
   .main-wrapper1 .swiper .slide_perpetual img {
@@ -1156,6 +1161,11 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   color: #9a6aff;
   font-weight: 600;
   line-height: 1.1;
+}
+@media screen and (max-width: 639px) {
+  .main-wrapper1 .container:last-of-type .left h2 {
+    font-size: 3rem;
+  }
 }
 .main-wrapper1 .container:last-of-type .left h2 + h2 {
   font-size: 1.25rem;
@@ -1233,7 +1243,7 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   z-index: -1;
 }
 @media screen and (max-width: 1100px) {
-  .main-wrapper1 {
+  .main-wrapper1 .main_svg {
     margin-top: 0;
   }
 }
@@ -1252,19 +1262,16 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   flex-direction: column;
 }
 .main_wrapper2 .container:first-of-type h2 {
+  text-align: center;
   font-size: 2.5rem;
   color: white;
   font-weight: 600;
   line-height: 2rem;
 }
 .main_wrapper2 .container:first-of-type p {
+  text-align: center;
   padding-top: 1rem;
   color: rgb(184, 173, 210);
-}
-@media screen and (max-width: 639px) {
-  .main_wrapper2 .container:first-of-type p {
-    text-align: center;
-  }
 }
 .main_wrapper2 .container:last-of-type {
   padding: 0 0 4rem;

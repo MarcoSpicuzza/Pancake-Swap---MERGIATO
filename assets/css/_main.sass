@@ -18,7 +18,7 @@
     background: $bg-color1
     flex-direction: column
     @media screen and (max-width: $mobile)
-        padding: 10.875rem 0 0
+        padding: 7rem 0 0
     .container:first-of-type
         max-height: 192px
         border-radius: calc($rem*2)
@@ -49,6 +49,8 @@
                 color: white
                 text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.65)
                 line-height: $p-height
+                @media screen and (max-width: $mobile)
+                    font-size: 1.2rem
             .countdown
                 height: 55px
                 display: inline-flex
@@ -79,7 +81,7 @@
                     @media screen and (max-width: $mobile)
                         font-size: 2rem
             img
-                width: 390px
+                width: 385px
                 @media screen and (max-width: $mobile)
                     right: -96px
                     bottom: -9px
@@ -114,6 +116,8 @@
                 color: $primary-color
                 font-weight: $weight600
                 line-height: $p-height
+                @media screen and (max-width: $mobile)
+                    font-size: 3rem
                 + h2
                     font-size: $md
                     color: white
@@ -140,27 +144,28 @@
     .main_svg
         margin-top: -330px
         z-index:-1
-    @media screen and (max-width: 1100px)
+        @media screen and (max-width: 1100px)
             margin-top: 0
 
 .main_wrapper2
-    margin-top: -1px // fix border between sections
+    margin-top: -1px
     background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%)
     flex-direction: column
     .container:first-of-type
+        text-align:center
         padding: 4rem 0 2rem
         @include flex
         flex-direction: column
         h2
+            text-align: center
             font-size: $xl
             color: white
             font-weight: $weight600
             line-height: calc($rem*2)
         p
+            text-align: center
             padding-top: $rem
             color: rgb(184, 173, 210)
-            @media screen and (max-width: $mobile)
-                text-align: center
     .container:last-of-type
         padding: 0 0 4rem
         @include flex
