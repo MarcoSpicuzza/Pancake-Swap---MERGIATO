@@ -7,11 +7,14 @@
 
 body {
   font-family: Kanit, sans-serif;
-  background-color: rgb(8, 6, 11);
 }
 
 #bg {
   max-width: 1200px;
+}
+
+.bg-all {
+  background-color: rgb(8, 6, 11);
 }
 
 #select-coin {
@@ -150,6 +153,9 @@ div#bg {
   .table-cell {
     white-space: normal !important;
   }
+}
+.wallet-btn > svg {
+  display: initial;
 }
 
 /*# sourceMappingURL=perstyle.css.map */

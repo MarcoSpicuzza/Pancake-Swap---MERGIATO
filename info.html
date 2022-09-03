@@ -462,7 +462,8 @@
         </div>
       </div>
     </div>
-    <div class="w-full flex flex-col mx-6 pb-4 pt-36 m-auto" id="bg">
+    <div class="w-full bg-all">
+      <div class="w-full flex flex-col mx-6 pb-4 pt-36 m-auto" id="bg">
       <div>
         <select name="" class="m-4 p-2 rounded-3xl" id="select-coin">
           <option value="all">All</option>
@@ -511,6 +512,8 @@
         <div class="table-row-group" id="table-row"></div>
       </div>
     </div>
+  </div>
+    
     <div class="footer-wrapper footer-row">
       <div class="container-footer">
         <div class="logo-footer mobile">
@@ -895,7 +898,7 @@
         </div>
       </div>
     </div>
-    <div class="connect-wallet">
+    <div class="connect-wallet -z-10">
       <div class="wallet-bg"></div>
       <div class="wallet">
         <div class="wallet-title">
@@ -1052,7 +1055,7 @@
             connectWallet.style.animation =
               "connect-wallet 0.35s ease forwards";
             document.querySelector(".wallet").style.animation = "none";
-          }
+           }
         };
       });
     
@@ -1067,7 +1070,7 @@
       document.querySelector(".wallet-close").onclick = closeWallet;
       function closeWallet() {
         if (window.innerWidth < 851) {
-          connectWallet.style.zIndex = "-1";
+          connectWallet.style.zIndex = "-10";
           connectWallet.style.animation = "close-wallet 0.35s ease";
           document.querySelector(".wallet").style.animation =
             "bla2 0.3s forwards ease-in-out";
@@ -1075,7 +1078,7 @@
           connectWallet.style.zIndex = "-1";
           connectWallet.style.animation = "close-wallet 0.35s ease";
           document.querySelector(".wallet").style.animation = "none";
-        }
+         }
       };
       
     </script>
