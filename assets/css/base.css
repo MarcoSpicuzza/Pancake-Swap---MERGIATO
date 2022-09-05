@@ -365,17 +365,17 @@ nav {
   box-sizing: border-box;
 }
 
-body, a, button {
+html, body, a, button {
   font-family: "Kanit", sans-serif;
 }
-body ::-webkit-scrollbar, a ::-webkit-scrollbar, button ::-webkit-scrollbar {
+html ::-webkit-scrollbar, body ::-webkit-scrollbar, a ::-webkit-scrollbar, button ::-webkit-scrollbar {
   width: 8px;
 }
-body ::-webkit-scrollbar-thumb, a ::-webkit-scrollbar-thumb, button ::-webkit-scrollbar-thumb {
-  background: rgb(184, 173, 210);
+html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb, a ::-webkit-scrollbar-thumb, button ::-webkit-scrollbar-thumb {
+  background-color: rgb(184, 173, 210);
   border-radius: 8px;
 }
-body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-scrollbar-track {
+html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-scrollbar-track {
   box-shadow: rgb(55, 47, 71) 0px 0px 5px inset;
   border-radius: 10px;
 }
@@ -550,7 +550,7 @@ body ::-webkit-scrollbar-track, a ::-webkit-scrollbar-track, button ::-webkit-sc
   width: 8px;
 }
 .lista-lingue ::-webkit-scrollbar-thumb, .bottone-lingue ::-webkit-scrollbar-thumb {
-  background: rgb(184, 173, 210);
+  background-color: rgb(184, 173, 210);
   border-radius: 8px;
 }
 .lista-lingue ::-webkit-scrollbar-track, .bottone-lingue ::-webkit-scrollbar-track {
